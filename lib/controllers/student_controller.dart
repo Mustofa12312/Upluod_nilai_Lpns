@@ -7,9 +7,8 @@ class StudentController extends GetxController {
 
   Future<void> fetchStudentById(int id) async {
     final response = await SupabaseService.client
-        .from('students')
-        // ambil juga data kelas terkait
-        .select('id, name, class_id, classes ( name )')
+        .from('students_ujian_akhir')
+        .select('id, name, class_id, classes(name), addresses(name)')
         .eq('id', id)
         .maybeSingle();
 

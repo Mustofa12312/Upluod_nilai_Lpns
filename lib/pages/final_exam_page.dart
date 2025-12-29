@@ -96,7 +96,7 @@ class _FinalExamPageState extends State<FinalExamPage>
 
       final data = await SupabaseService.client
           .from('students_ujian_akhir')
-          .select('id, name, class_id, classes(name)')
+          .select('id, name, class_id, classes(name), addresses(name)')
           .eq('id', int.parse(idText))
           .maybeSingle();
 
@@ -279,7 +279,14 @@ class _FinalExamPageState extends State<FinalExamPage>
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      "Kelas: ${s['classes']?['name'] ?? '-'}",
+                      "Rayon: ${s['classes']?['name'] ?? '-'}",
+                      style: GoogleFonts.poppins(
+                        color: Colors.black54,
+                        fontSize: 15,
+                      ),
+                    ),
+                    Text(
+                      "Alamat: ${s['addresses']?['name'] ?? '-'}",
                       style: GoogleFonts.poppins(
                         color: Colors.black54,
                         fontSize: 15,

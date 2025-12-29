@@ -5,9 +5,9 @@ class SupabaseService {
   static Future<void> init() async {
     await Supabase.initialize(
       url:
-          'https://wcjuagsmmxyxmtwnnndr.supabase.co', // SAYA TIDAK MASUKAN UNTUK KEAMANAN DATA
+          'https://xubltbtaiocnafjkpefo.supabase.co', // SAYA TIDAK MASUKAN UNTUK KEAMANAN DATA
       anonKey:
-          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndjanVhZ3NtbXh5eG10d25ubmRyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQyMTIyNDYsImV4cCI6MjA3OTc4ODI0Nn0.gUr5qFkmrLO4zrxvIFYHaELfSciWOPCULq0p0Ip1ZAE', //SAYA TIDAK MASUKAN UNTUK KEAMANAN DATA
+          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh1Ymx0YnRhaW9jbmFmamtwZWZvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY5MjU4NzIsImV4cCI6MjA4MjUwMTg3Mn0.h3otGri3YV_BCWYsN-uI93qSjoweGF3KUx20XxE1M3c', //SAYA TIDAK MASUKAN UNTUK KEAMANAN DATA
     );
   }
 
