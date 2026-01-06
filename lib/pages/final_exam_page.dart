@@ -279,7 +279,7 @@ class _FinalExamPageState extends State<FinalExamPage>
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      "Rayon: ${s['classes']?['name'] ?? '-'}",
+                      "Kelas / Rayon: ${s['classes']?['name'] ?? '-'}",
                       style: GoogleFonts.poppins(
                         color: Colors.black54,
                         fontSize: 15,
